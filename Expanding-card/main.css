@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+
+}
+
+.panel{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    flex: 0.5;
+    position: relative;
+    border-radius: 80px;
+    margin: 3px;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3{
+    background-color: yellow;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 35px;
+    left: 50px;
+    font-size: 3rem;
+    color:red;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel.active{
+    flex: 5;
+ 
+
+
+}
+
+.panel.active h3{
+    opacity: 1;
+
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Pratice</title>
+</head>
+<body>
+    
+    <script>
+        //Bir öğrencinin bilgilerini alıp notunu hesaplar.
+
+        /* var ad = prompt("Adınızı Giriniz: ");
+        var ogrno = prompt("Numaranızı Giriniz: ");
+        var cinsiyet = true; //erkek: true Kadın: false
+        var ders = "Matematik";
+        var not1 = 50;
+        var not2 = 60;
+        var ortalama = ((not1 + not2)/2);
+
+        console.log(ogrno + " Numaralı " + ad + " İsimli öğrencinin " +ders+ " Dersinden Aldığı ortalama not " + ortalama); */
+
+        //***************************************************************************************
+        //******************************************************************************************************
+
+
+        // Kullanıcıdan alınan 3 sayının en büyüğünü bulur.
+
+        /* var a = prompt("Sayı Giriniz: ");
+        var b = prompt("Sayı Giriniz: ");
+        var c = prompt("Sayı Giriniz: ");
+        
+        console.log("a Sayısı en büyük mü? :", (a>b) && (a>c));
+        console.log("a Sayısı en büyük mü? :", (b>a) && (b>c));
+        console.log("a Sayısı en büyük mü? :", (c>a) && (c>b)); */
+
+        //******************************************************************************************
+        //******************************************************************************************************
+
+
+        // Girilen doğum yılına göre ehliyet alabilirmi? 
+        //18 den küçük ise kaç yılı var?
+
+       /*  var dogum = prompt("Doğum yılınızı giriniz: ");
+        var yil = 2022;
+        var yas = yil - dogum;
+
+        if (yas<18){
+            console.log("Ehliyet alamazsınız.");
+
+            console.log("Ehliyet alabilmek için " +(18-yas)+ " Beklemelisiniz")
+        }
+        else if (yas>=18){
+            console.log("Ehliyet Alabilirsiniz.");
+        }
+        else{
+            console.log("Yanlış Bir Değer Girdiniz.")
+        } */
+
+        //******************************************************************************************
+        //******************************************************************************************************
+
+
+        //Girilen Ay Bilgisine göre göre mevsim bilgisini yazar.
+
+        /* var ay = prompt("Kaçıncı Aydasınız?");
+
+        switch(ay){
+            case '12':
+            case '1':
+            case '2':
+                console.log("Kış Mevsimindesiniz.");
+                break;
+
+            case '3':
+            case '4':
+            case '5':
+                console.log("İlkBahar Mevsimindesiniz.");
+                break;
+
+            case '6':
+            case '7':
+            case '8':
+                console.log("Yaz Mevsimindesiniz.");
+                break;
+
+            case '9':
+            case '10':
+            case '11':
+                console.log("Sonbahar Mevsimindesiniz.");
+            default:
+                console.log("Yanlış Değer Girdiniz.")     
+        } */
+
+        //****************************************************************************************************************
+        //******************************************************************************************************
+
+
+        /* for (var i=0; i<=100; i++){
+            if (i%2==0){
+                console.log(i);
+            }
+        } */
+
+        // 10'dan 100'e kadar sayıları yazar(For).
+
+        /* for (var i = 10; i<101; i++){
+            console.log(i);
+        } */
+
+        // 10'dan 100'e kadar sayıları 5er 5er yazar(While).
+
+       /*  var i = 10;
+        while(i<=100){
+            console.log(i);
+            i=i+5;
+        } */
+
+        //Login Kontrolü: Kullanıcı adı ve parola kontrolünden 
+        //geçene kadar kullanıcı bilgilerini kullanıcıdan ister.
+
+        /* var k_username = "guest";
+        var k_password = "12345";
+        var loggedin  = false;
+
+        while(loggedin==false){
+
+            var username = prompt("Kullanıcı Adınızı Giriniz: ");
+            var password = prompt("Şifrenizi Giriniz: ");
+
+            if((k_username=username) && (k_password==password)){
+                console.log("Giriş Yapıldı");
+                loggedin = true;
+            }
+            else{
+                console.log("Hatalı Kullanıcı Adı Veya Parola!");
+            }
+        } */
+
+        //**************************************************************************************
+        //******************************************************************************************************
+
+
+        // Tüm Modelleri yazar.
+
+        /* var now = 2022;
+        var models = ['Toyota','Mazda','Mercedes','Opel'];
+        var years = ['2015','2012','2016','2014'];
+
+        for(var i=0; i<models.length;i++){
+            console.log(models[i]);
+        }
+
+        models.forEach(function(element){
+            console.log(element);
+        }); */
+
+        //Aşağıdaki görüntüyü consolda oluşturun.
+
+        //Toyota 2015 model ve 7 yaşında bir araçtır.
+        //Mazda 2012 model ve 10 yaşında bir araçtır. 
+        //Mercedes 2016 model ve 6 yaşında bir araçtır. 
+        //Opel 2014 model ve 8 yaşında bir araçtır. 
+
+        /* var now = 2022;
+        var models = ['Toyota','Mazda','Mercedes','Opel'];
+        var years = ['2015','2012','2016','2014'];
+
+        for (var i=0; i<models.length;i++){
+            console.log(models[i] +' '+ years[i] +' Model ve '+ (now - years[i]) + ' Yaşında bir araçtır' );
+        } */
+
+        //Model ve Years dizilerine eleman eklenebilsin.
+
+        /* var now = 2022;
+        var models = ['Toyota','Mazda','Mercedes','Opel'];
+        var years = ['2015','2012','2016','2014'];
+
+        var model = prompt("Model Girildi: ");
+        var year = prompt("Model Yılını Giriniz: ");
+
+       models.push(model);
+       years.push(year);
+
+       for (var i=0; i<models.length;i++){
+            console.log(models[i] +', '+ years[i] +' Model ve '+ (now - years[i]) + ' Yaşında bir araçtır.' );
+       } */
+
+        //******************************************************************************************************
+        //********************************************************************************************************************
+
+       // 1: Bir personelin aşaüıdaki bilgilerini object içinde saklayınız.
+
+            // ad       : Ali
+            // soyad    : Yılmaz
+            // cinsiyet : Erkek
+            // telefon  : 01234567878
+            // adres    : İzmit, Kocaeli
+            // meslek   : Bilgisayar Mühendisi
+            // diller   : İngilizce, Almanca
+            // hobiler  : Sinema, Spor, Kitap Okumak
+
+        //2: Bu personel kaç dil bilmektedir?
+        //3: Bu personel bilgilerini alt alta yazdırınız.
+        //4: 3 Elemanlı bir personel bilgi listesi oluşturun.
+
+        /* var ali = {
+            ad       : 'Ali',
+            soyad    : 'Yılmaz',
+            cinsiyet : 'Erkek',
+            telefon  : '01234567878',
+            adres    : 'İzmit, Kocaeli',
+            meslek   : 'Bilgisayar Mühendisi',
+            diller   : ['İngilizce', 'Almanca'],
+            hobiler  : ['Sinema', 'Spor', 'Kitap Okumak']
+        };
+        
+         var personel = [
+            {
+                ad       : 'Ali',
+                soyad    : 'Yılmaz',
+                cinsiyet : 'Erkek',
+                telefon  : '01234567878',
+                adres    : 'İzmit, Kocaeli',
+                meslek   : 'Bilgisayar Mühendisi',
+                diller   : ['İngilizce', 'Almanca'],
+                hobiler  : ['Sinema', 'Spor', 'Kitap Okumak']
+            },
+            {
+                ad       : 'Ayşe',
+                soyad    : 'Yılmaz',
+                cinsiyet : 'Kadın',
+                telefon  : '025889654',
+                adres    : 'İzmit, Kocaeli',
+                meslek   : 'Bilgisayar Mühendisi',
+                diller   : ['İngilizce', 'Almanca'],
+                hobiler  : ['Sinema', 'Spor', 'Kitap Okumak']
+            },
+            {
+                ad       : 'Mehmet',
+                soyad    : 'Yılmaz',
+                cinsiyet : 'Erkek',
+                telefon  : '012456567878',
+                adres    : 'İzmit, Kocaeli',
+                meslek   : 'Bilgisayar Mühendisi',
+                diller   : ['İngilizce', 'Almanca'],
+                hobiler  : ['Sinema', 'Spor', 'Kitap Okumak']
+            }
+
+        ];
+        
+        personel.forEach(function(personel){
+            console.log('**************************');
+            console.log(personel.ad+' '+personel.soyad);
+
+            
+            personel.diller.forEach(function(dil){
+                console.log(dil);
+            });
+        }); */
+        
+
+       /*  console.log(ali.diller.length);
+
+        ali.hobiler.forEach(function(hobi){
+            console.log(hobi);
+        });
+
+        console.log(ali.hobiler); */
+
+        //******************************************************************************************************
+        //******************************************************************************************************
+
+        // 1: Girilen sayının tek mi çift mi olduğunu hesaplayan bir fonksiyon yazınız.
+
+        /* function tekcift(sayi){
+            if(sayi%2==0){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+        if(tekcift(6)){
+            console.log("Sayı Çift");
+        }
+        else {
+            console.log("Sayı Tek");
+        } */
+
+        // 2: Girilen Bir sayının faktoriyelini hesaplayan bir fonksiyon yazınız.
+
+        // 4 => 4*3*2 => 24
+        /* function faktoriyel(sayi){
+            var sonuc = 1;
+
+            for (var i=2;i<=sayi;i++){
+                sonuc *=i;
+            }
+            return sonuc;
+
+        }
+
+        console.log(faktoriyel(4)); */
+
+        // 3: Kendisine gönderilen bir dizinin elemanlarını ekrana yazan fonksiyonu yazınız.
+
+        /* var model = ['Opel','Mazda','Toyota'];
+
+        function yazdir(dizi){
+            dizi.forEach(function(item){
+                console.log(item);
+            });
+                
+        }
+
+        yazdir(model); */
+
+        //**************************************************************************************************
+        //**************************************************************************************************
+
+        //Cümle Özetleme Uygulaması.
+        //Bir Cümle İçinden İçinden İstenilen Karakter Sayısına Göre,
+        //Bir Özet Çıkartılsın. Ancak bölünecek nokta birr kelime olamaz.
+
+        /* var product = {
+            name : 'Samsung S8',
+            price : 3000,
+            description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, deserunt!',
+            summary : function(){
+
+            var ozetcumle = [];
+            var maxKarakter = 20;
+            var cumle = this.description;
+
+            if(maxKarakter>cumle.length){
+                this.shortDescription = cumle;
+            }
+            else{
+                var kelimeler = cumle.split(' ');
+
+                var toplamKarakter = 0;
+
+           for(var i=0;i<kelimeler.length;i++){
+                ozetcumle.unshift(kelimeler[i]);
+                toplamKarakter+=kelimeler[i].length;
+
+                if(toplamKarakter>maxKarakter){
+                    break;
+                }
+           }
+        }
+
+        this.shortDescription = ozetcumle.join(' ') + '...';
+            }
+        };
+
+        
+        product.summary();
+        console.log(product); */
+        
+
+        
+
+    </script>
+    
+</body>
+</html>

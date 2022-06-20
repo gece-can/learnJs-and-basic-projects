@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Tutorialss</title>
+
+    <style> 
+        .header{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 18px;
+            background-color: red;
+        }
+
+        .container{
+            text-align: center;
+            font-size: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+        <div class="header">
+            <h1>1 Videoda Javascript</h1>
+        </div>
+        <hr>
+        <div class="container">
+           <!--  <button onclick="this.innerHTML = 'Butona tıklandı'">Tıkla</button> -->
+           <p id="para1">Pragraf 1</p>
+           <button onmouseover="mouseover()" onmouseout="mouseout()">Tıkla</button>
+        </div>
+
+
+    <script>
+        /* Events  */
+
+        /* function tikla(){
+            alert("butona tıklandı");
+        } */
+
+        /* function tikla(element) {
+            element.innerHTML = "butona tıklandı";
+        } */
+
+        /* function renkDegistir(){
+            var element = document.getElementById("para1");
+            element.style.color = "red";
+        } */
+
+        function mouseover(){
+            var element = document.getElementById("para1");
+            element.innerHTML = "mouse over effect";
+        }
+
+        function mouseout(){
+            var element = document.getElementById("para1");
+            element.innerHTML = "mouse out effect";
+        }
+
+
+        /* alert("can"); */
+
+        /* Değişken Tanımlama */
+
+        /* var sayi1 = 20;
+        var sayi2 = 30; 
+        var sayi3 = 40; */
+
+        /* alert("Toplamlari: " + (sayi1 + sayi2 + sayi3)); */ /* toplama işlemi */
+        /* alert("Toplamlari: " + sayi1 + sayi2 + sayi3); */    /* yanyana toplama  */
+
+        /* var a = "javascript";
+        var b = "programlama ";
+        var c = "dili";
+        alert(a + b + c); */
+
+        /* var a;
+
+        a = 10;
+
+        var b = a * 2 + 10
+
+        alert("b nin değeri:" + b); */
+
+        /* Array (Birden Çok değeri bir arada depolama)*/
+
+        /* var Array = ["java", "python", "c++", "C"]; */
+        /* Array[4] = "php"; */
+        /* Array.push("go"); */
+        /* alert(Array); */
+        /* alert(Array.length); */
+
+        /* alert(Array[0]);
+        alert(Array[1]);
+        alert(Array[2]);
+        alert(Array[3]);
+        alert(Array[4]); */
+
+
+
+
+
+        /* For Döngüsü */
+
+       /*  for (var i = 0; i < 10;i++){
+            console.log("i'nin değeri: " + i);
+        } */
+
+        /* While Döngüsü */
+
+        /* var i = 0;
+
+        while (i < 100){
+            console.log("i'nin değeri: " + i)
+            i += 2; 
+            i = i + 2; üsttekiyle aynı sonucu elde ederiz
+        } */
+
+
+
+
+        /* Array elemanlarını yazdırma */
+
+        /* var sayilar = [32,5,1,100,-1,90];
+        console.log("Array Elemanları..."); */
+
+        /* for (var i = 0; i < sayilar.length;i++){
+            console.log("eleman: " + sayilar[i]);
+        } */
+
+       /*  sayilar.forEach(function(sayi){
+            console.log("eleman: " + sayi);
+        }); */
+
+
+
+
+        /* Koşul "if" durumları */
+        
+        /* var a = 5;
+        var b = 6;
+
+        if (a != b) --- Eşit değilse
+        if (a == b){ --- Eşitse
+            console.log ("eşit");
+        } */
+
+        /* if (10 < 20){
+            console.log("küçüktür");
+        } */
+
+        /* if (2 == "2") --- Sadece değerlerin eşit olmasına bakar
+        if (2 === "2"){ --- Değerlerin ve veri tiplerinin eşit olmasına bakar
+            console.log("eşit");
+        } */
+
+        /* if (2 == 2 && "can" == "can"){ --- And operatörü "&&" tüm değerler eşitse
+            console.log("eşit");
+        } */
+
+        /* if (2 == 2 || "can" == "caan"){ --- Or operatörü "||" En az bir tanesi eşitse
+            console.log("eşit");
+        } */
+
+        /* if ( ! (3 < 4)){ --- Not "!" operatörü 3 4 ten küçük olmasına rağmen küçük değil yapar
+            console.log("evet");
+        } */
+
+
+
+
+
+        /* İf Else/ Else İf */
+
+        /* var a = 10;
+        var b = 20;
+
+        if(a == b){
+            console.log("eşit");
+        }
+        
+        else {
+            console.log("esit değildir")
+        } */
+
+        /* var islem = 1;
+
+        if (islem == 1){
+            console.log("işlem 1");
+        }
+
+        else if (islem == 2){
+            console.log("işlem 2");
+        }
+
+        else if (islem == 3){
+            console.log("işlem 3");
+        }
+
+        else {
+            console.log("geçersiz işlem");
+        } */
+
+
+
+
+
+        /* Switch case yapıları */
+
+        /* var islem = 4;
+
+        switch (islem) {
+            case 1:
+                console.log("islem 1");
+                break;
+        
+            case 2:
+                console.log("islem 2");
+                break;
+
+            case 3:
+                console.log("islem 3");
+                break;
+
+            default:
+                console.log("geçersiz işlem");
+                
+        } */
+
+
+
+
+        /* Fonksiyon tanımlama */
+
+        /* function selamla(){
+            console.log("merhaba Nasılsın ?");
+        }
+
+        selamla();
+        selamla();
+        selamla();
+        selamla(); */
+
+        /* function selamla(isim){
+            console.log("merhaba " + isim);
+            
+        }
+
+        selamla("murat");
+        selamla("ayşe");
+        selamla("can"); */
+
+        /* function toplama(a,b,c){
+            console.log("toplamları : " + (a+b+c));
+        }
+
+        toplama(3,4,5); */
+
+        /* function toplama(a,b,c){
+            return a + b + c;
+        }
+
+        var toplam = toplama(3,4,5);
+
+        console.log("Toplamları : " + toplam); */
+
+
+
+
+
+        /* Object Tanımlama */
+
+        /* var calisan = {
+                isim: "can",
+                soyisim: "gece",
+                numara: 12345,
+                diller: ["php","java","c++"],
+                adres : {
+                    cadde : "Kabil",
+                    sokak : "1234.sokak"
+                }
+        };
+
+        console.log(calisan.isim);
+        console.log(calisan.numara);
+        console.log(calisan.diller);
+        console.log(calisan.adres.cadde);
+        console.log(calisan.adres.sokak); */
+
+
+        /* var calisan = {
+                isim: "can",
+                soyisim: "gece",
+                numara: 12345,
+                diller: ["php","java","c++"],
+                isimBilgileri : function(){
+                    return "isim: "+ this.isim + " soyisim: " + this.soyisim;
+                }
+        };
+
+        console.log(calisan.isim);
+        console.log(calisan.numara);
+        console.log(calisan.diller);
+        console.log(calisan.isimBilgileri()); */
+
+
+
+        /* var calisan = new Object();
+
+        calisan.isim = "can";
+        calisan.soyisim = "gece";
+        calisan.isimBilgileri = function(){
+            return "isim bilgileri: " + this.isim+ " " + this.soyisim;
+        };
+
+        console.log(calisan.isim);
+        console.log(calisan.soyisim);
+        console.log(calisan.isimBilgileri()); */
+
+
+
+        /* function Calisan(isim,soyisim,numara){
+            this.isim = isim;
+            this.soyisim = soyisim;
+            this.numara = numara;
+            this.bilgileriGoster = function(){
+                return "isim: " + this.isim + "\nSoyisim : " + this.soyisim + "\nNumara : " + this.numara;
+            }
+        }
+
+        var calisan1 = new Calisan("can gece","gece",123456);
+        var calisan2 = new Calisan("mustafa murat","coskun",324232);
+        console.log(calisan1.bilgileriGoster());
+        console.log(calisan2.bilgileriGoster()); */
+
+
+
+    </script>
+</body>
+</html>

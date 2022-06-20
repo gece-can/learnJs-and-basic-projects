@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-5">
+
+                <div class="card">
+                    <img src="" alt="Card image cap" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var models = [
+            {
+                name : 'Mazda CX-3',
+                image : 'img/mazda.jpg',
+                link : 'http://www.arabalar.com.tr/static-res/image/model/180x135/ford/fiesta/2022-ford-fiesta-111.jpg'
+            },
+            {
+                name : 'BMW',
+                image : 'img/bmw.jpg',
+                link : 'http://www.arabalar.com.tr/static-res/image/model/200x150/bmw/1-serisi/2019-bmw-1-serisi-111.jpg'
+            },
+            {
+                name : ' volvo',
+                image : 'img/volvo.jpg',
+                link : 'http://www.arabalar.com.tr/static-res/image/model/200x150/volvo/s90/2016-volvo-s90-sedan-111.jpg'
+            }
+        ];
+
+        setInterval(function(){
+            
+        var index= Math.floor(Math.random()*models.length);
+
+        console.log(index);
+        
+        var img = document.querySelector('.card-img-top');
+        var title = document.querySelector('.card-title');
+        var a = document.querySelector('a');
+
+        img.setAttribute('src',models[index].image)
+        a.setAttribute('href',models[index].link);
+        title.textContent = models[index].name;
+
+        },1000);
+
+        
+    </script>
+</body>
+</html>

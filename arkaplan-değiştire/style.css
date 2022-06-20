@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    transition: 0.3s ease all;
+}
+
+button{
+    font-size: 1.5rem;
+    padding: 1rem; 
+    background-color: lightblue;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+button:hover{
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+.all{
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+}
+
+.color{
+    width: 25px;
+    height: 25px;
+    flex-direction: row;
+    margin: 2px;
+    display: flex;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+}
+.brown{
+    background-color: brown;
+}
+.blue{
+    background-color: blue;
+} 
+.chartreuse {
+    background-color: chartreuse;
+}
+.crimson{
+    background-color: crimson;
+}
+.darkkhaki{
+    background-color: darkkhaki;
+}
+.lightslategray{
+    background-color: lightslategray;
+}
+.green{
+    background-color: green;
+}
+.turquoise{
+    background-color: turquoise;
+}
+.tomato{
+    background-color: tomato;
+}
+
+.color:hover{
+    transform: scale(1.1);
+}
+
